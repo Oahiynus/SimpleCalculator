@@ -19,7 +19,7 @@ class Calculator:
                     print(num1 ** exp)
                 else:
                     num2 = float(input_str)
-                    print("Please enter an operator (+, -, *, /, %):")
+                    print("Please enter an operator (+, -, *, /, %, **):")
                     input_str = input()
                     if input_str == "exit":
                         break
@@ -33,6 +33,8 @@ class Calculator:
                         print(num1 / num2)
                     elif input_str == "%":
                         print(num1 % num2)
+                    elif input_str == "**":
+                        print(num1 ** num2)
                     else:
                         print("Invalid operator!")
             except ValueError:
